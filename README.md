@@ -18,7 +18,7 @@ Situations are hard coded, with the follow possible values:
 
 The UML diagram representation of the relation between system entities:
 
-![UML representation of system entities relation] ([https://github.com/GabrielDantasDs/ticket-management/blob/master/public/uml.png](https://raw.githubusercontent.com/GabrielDantasDs/ticket-management/refs/heads/master/public/uml.png))
+![UML representation of system entities relation] (https://raw.githubusercontent.com/GabrielDantasDs/ticket-management/refs/heads/master/public/uml.png?raw=true)
 
 ** Requirements to build an run **
 - Laravel 11.9 >
