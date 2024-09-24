@@ -50,8 +50,9 @@ In a linux/MacOs terminal or WSL2 in windows:
 
 ****************************************************************************
 
-Gerenciamento de Tickets
-Sobre o Projeto
+<p> Gerenciamento de Tickets </p>
+
+## Sobre o Projeto
 
 Este é um projeto simples para gerenciamento de tickets de suporte.
 
