@@ -20,19 +20,19 @@ class DatabaseSeeder extends Seeder {
 
         $categories = [["name" => "Teste"]];
 
-        $tickets = [["title" => "Ticket 1", "description" => "Descrição", "category_id" => 1, "situation_id" => 1]];
+        // $tickets = [["title" => "Ticket 1", "description" => "Descrição", "category_id" => 1, "situation_id" => 1]];
 
-        // foreach ($situations as $situation) {
-        //     Situation::factory()->create($situation);
-        // }
+        foreach ($situations as $situation) {
+            Situation::factory()->create($situation);
+        }
 
         // foreach ($categories as $category) {
         //     Category::factory()->create($category);
         // }
 
-        foreach ($tickets as $ticket) {
-            Ticket::factory()->create($ticket);
-        }
+        // foreach ($tickets as $ticket) {
+        //     Ticket::factory()->create($ticket);
+        // }
     }
 }
 

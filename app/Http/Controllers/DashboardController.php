@@ -21,11 +21,11 @@ class DashboardController {
             $q->where('name', 'Novo');
         })->whereBetween('created_at', [Carbon::parse(Carbon::now())->startOfMonth()->format('Y-m-d'), Carbon::parse(Carbon::now())->endOfMonth()->format('Y-m-d')])->get()->count();
 
-        $porcentagem_resolvidos = round(floatval(($tickets_resolvidos / $tickets) * 100), 2);
+        $porcentagem_resolvidos = $tickets > 0 ? round(floatval(($tickets_resolvidos / $tickets) * 100), 2) : 0;
 
-        $porcentagem_pendentes = round(floatval(($tickets_pendentes / $tickets) * 100), 2);
+        $porcentagem_pendentes = $tickets > 0 ? round(floatval(($tickets_pendentes / $tickets) * 100), 2) : 0;
 
-        $porcentagem_novos = round(floatval(($tickets_novos / $tickets) * 100), 2);
+        $porcentagem_novos = $tickets > 0 ? round(floatval(($tickets_novos / $tickets) * 100), 2) : 0;
 
         return view(
             'dashboard',
