@@ -16,9 +16,9 @@ Situations are hard coded, with the follow possible values:
 - Pendente -> When ticket are is process to be resolved.
 - Resolvido -> When ticket is already resolved.
 
-The UML diagram representation of the relation between system entities:
+The EDR diagram representation of the relation between system entities:
 
-![UML representation of system entities relation] (https://raw.githubusercontent.com/GabrielDantasDs/ticket-management/refs/heads/master/public/uml.png?raw=true)
+![EDR representation of system entities relation](https://github.com/GabrielDantasDs/ticket-management/blob/master/public/uml.png)
 
 ** Requirements to build an run **
 - Laravel 11.9 >
